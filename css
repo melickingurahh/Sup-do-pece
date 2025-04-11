@@ -1,0 +1,98 @@
+:root {
+  --tmave-modra: #001f3f;
+  --azurova: #00cfff;
+  --bila: #ffffff;
+  --cerna: #000000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background-color: var(--tmave-modra);
+  color: var(--bila);
+  line-height: 1.6;
+}
+
+header {
+  background-color: var(--azurova);
+  color: var(--cerna);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+nav a {
+  margin-left: 1.5rem;
+  color: var(--cerna);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.hero {
+  text-align: center;
+  padding: 3rem 1rem;
+  background: var(--tmave-modra);
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  color: var(--azurova);
+}
+
+.galerie {
+  padding: 2rem;
+}
+
+.galerie h2 {
+  text-align: center;
+  color: var(--azurova);
+  margin-bottom: 2rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.figurka {
+  background: var(--bila);
+  color: var(--cerna);
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.figurka img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.onas {
+  padding: 2rem;
+  text-align: center;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: var(--azurova);
+  color: var(--cerna);
+  font-size: 0.9rem;
+}

@@ -76,12 +76,31 @@ nav a:hover {
   padding: 1rem;
   border-radius: 8px;
   text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.figurka:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
 .figurka img {
   width: 100%;
   height: auto;
   border-radius: 4px;
+  object-fit: cover;
+}
+
+.figurka h3 {
+  margin: 1rem 0;
+  font-size: 1.2rem;
+  color: var(--azurova);
+}
+
+.figurka p {
+  font-size: 0.9rem;
+  color: var(--cerna);
 }
 
 .onas {
